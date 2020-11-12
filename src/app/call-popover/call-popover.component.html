@@ -1,0 +1,12 @@
+<ion-list>
+<div *ngIf="selected === 'kabul'">
+  <ion-item *ngFor="let phone of kabul" (click)="call()">
+    <ion-label><span>{{phone.name}}:</span> <span>{{phone.number}}</span></ion-label>
+  </ion-item>
+</div>
+ <div *ngIf="selected === 'balkh'">
+  <ion-item  *ngFor="let phone of balkh" (click)="call()">
+    <ion-label><span>{{phone.name}}:</span> <span>{{phone.number}}</span></ion-label>
+  </ion-item>
+ </div>
+</ion-list>

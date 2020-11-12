@@ -1,0 +1,20 @@
+ion-icon{
+    color: #ff6600;
+}
+ion-content{
+    white-space: pre-line;
+    .txtcontent{
+        padding: 5px 10px;
+    }
+    strong{
+        color:#ff6600;
+    }
+    .shareSection{
+        padding: 10px;
+
+        ion-button{
+            width: 100%;
+            margin: 0px;
+        }
+    }
+}

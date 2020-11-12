@@ -1,0 +1,23 @@
+ion-header{
+    text-align: center;
+}
+ion-content{
+    padding: 0px;
+    ion-segment{
+        background: none;
+        border-bottom: solid 1px gray
+    }
+    ion-segment-button{
+        min-width: fit-content;
+        --background-checked:#ff6600;
+        --color-checked: #ff6600;
+    }
+
+    ion-card{
+        margin: 0px;
+        padding: 5px;
+        white-space: pre-line;
+        box-shadow: none;
+        
+    }
+}

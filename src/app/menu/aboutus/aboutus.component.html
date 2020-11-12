@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>کارگر چیست/کیست؟</ion-title>
+    <ion-icon name="arrow-forward-circle-outline" size="large" slot="end" (click)="close()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="txtcontent">
+    <strong>کارگر: </strong>
+    <p>
+      {{kargar}}
+    </p>
+    <strong>شرایط استفاده: </strong>
+    <p>
+      {{policy}}
+    </p>
+  </div>
+  <div class="shareSection">
+    <strong>اشتراک گذاری</strong>
+    <p>
+      برنامه کارگر را با لمس آیکن "شییر" به دوستان تان شریک سازید.
+    </p>
+    <ion-button fill="clear" (click)="share()">
+      <ion-icon name="share-social-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>

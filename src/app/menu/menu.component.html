@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-list>
+    <ion-radio-group [value]="province">
+      <ion-list-header>  انتخاب ولایت </ion-list-header>
+    <ion-item>
+      <ion-label>کابل</ion-label>
+      <ion-radio slot="start" value ="kabul" (click)="selectProvince($event)"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>بلخ</ion-label>
+      <ion-radio slot="start" value ="balkh"  (click)="selectProvince($event)"></ion-radio>
+    </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>کارگر را با دوستان تان شریک سازید</ion-list-header>
+    <ion-item (click)="share()">
+      <ion-icon name="share-social-outline" slot="start"></ion-icon>
+  </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>بیشتر بدانید</ion-list-header>
+    <ion-item (click)="about()">
+      <ion-label>کارگر؟</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

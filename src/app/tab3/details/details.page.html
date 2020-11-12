@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{donors[0].name}}</ion-title>
+    <ion-button slot="end" fill="clear" (click)="close()">
+      <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="assets/image/{{donors[0].image}}">
+  </ion-card>
+  <ion-card>
+  <p><strong>نام: </strong> {{donors[0].name}}</p>
+  <p> <strong>معلومات کوتاه: </strong> {{donors[0].shortinfo}}</p>
+  <p> <strong>شماره های تماس: </strong> {{donors[0].phone}}</p>
+  <p> <strong>ایمیل آدرس: </strong> {{donors[0].email}}</p>
+  <p> <strong>آدرس:</strong> {{donors[0].address}}</p>
+  <p> <strong>معلومات کامل: </strong> {{donors[0].details}}</p>
+  </ion-card>
+</ion-content>

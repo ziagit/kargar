@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{items[0].name}}</ion-title>
+    <ion-button slot="end" fill="clear" (click)="close()">
+      <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+    <div class="images">
+      <img src="./assets/image/{{items[0].image}}">
+    </div>
+    <div class="contents">
+      <p>{{items[0].info}}</p>
+      <p class="category">{{items[0].category}}</p>
+    </div>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" (click)="phonelist($event)">
+    <ion-fab-button size="small">
+      <ion-icon name="call"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="selectedProvince === 'kabul'">
+    <ion-fab-button  color="success" size="small" href="https://api.whatsapp.com/send?phone=${+93793896525} text='با عرض سلام '">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="selectedProvince === 'balkh'">
+    <ion-fab-button  color="success" size="small" href="https://api.whatsapp.com/send?phone=${+93793896525} text='با عرض سلام '">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

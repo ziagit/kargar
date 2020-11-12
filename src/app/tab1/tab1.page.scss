@@ -1,0 +1,43 @@
+ion-header{
+    ion-searchbar{
+        box-shadow: none;
+    }
+    .sc-ion-searchbar-md-h{
+        --box-shadow: none;
+        padding: 0px;
+    }
+}
+ion-content{
+    padding: 0px;
+    ion-grid{
+        ion-col{
+            margin: 0px;
+            padding: 0px;
+    
+        ion-card{
+            margin: 5px;
+            padding: 0px;
+            text-align: center;
+            box-shadow: none;
+
+            ion-card-header{
+                padding: 0px;
+                margin: 0px;
+                border-bottom: solid 1px #ddd;
+                
+                img{
+                    height: 75px;
+                    width: 100%;
+                   
+                }
+            }
+            ion-card-content{
+                padding: 3px 0px 3px 0px;
+    
+            }
+        }
+        }
+    }
+
+    
+ }
